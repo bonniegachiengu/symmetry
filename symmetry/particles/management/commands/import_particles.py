@@ -1,8 +1,8 @@
 import csv
 import os
 from django.core.management.base import BaseCommand
-from particles.models import EParticle
 from fractions import Fraction
+from particles.models import EParticle
 
 class Command(BaseCommand):
     help = 'Import particle data from a CSV file'
