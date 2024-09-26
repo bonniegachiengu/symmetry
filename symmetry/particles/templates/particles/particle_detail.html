@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ particle.name }} Details</title>
+</head>
+<body>
+    <h1>{{ particle.name }}</h1>
+    <p>Mass: {{ particle.mass }} MeV/c^2</p>
+    <p>Charge: {{ particle.charge }}</p>
+    <p>Spin: {{ particle.spin }}</p>
+    <p>Particle Type: {{ particle.particle_type }}</p>
+    <a href="{% url 'particle_list' %}">Back to List</a>
+</body>
+</html>
